@@ -3,15 +3,19 @@ import logo from './logo.svg';
 import './App.scss';
 import Header from "./components/Header/Header";
 import Input from "./components/shared/Input/Input";
+import {useWeatherData} from "./use/weatherData";
+import {SearchForm} from "./components/SearchForm/SearchForm";
 
 function App() {
-  const [term, setTerm] = useState('Bratislava')
+
+    const {getWeatherData, result, isFetching} = useWeatherData()
 
   return (
     <div className="App">
       <header className="App-header">
         <Header />
-        <Input value={term} setValue={setTerm} />
+        <SearchForm getWeatherData={getWeatherData} />
+          <div>{JSON.stringify(result ?? {})}</div>
       </header>
     </div>
   );

@@ -1,0 +1,9 @@
+@import '../../../style/variables';
+
+.button {
+  border: none;
+  background: $azet-blue-color;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 20px;
+}
