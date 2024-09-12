@@ -1,10 +1,9 @@
-import React, {useState} from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.scss';
 import Header from "./components/Header/Header";
-import Input from "./components/shared/Input/Input";
 import {useWeatherData} from "./use/weatherData";
 import {SearchForm} from "./components/SearchForm/SearchForm";
+import Location from "./components/Location/Location";
 
 function App() {
 
@@ -15,8 +14,9 @@ function App() {
       <header className="App-header">
         <Header />
         <SearchForm getWeatherData={getWeatherData} />
-          <div>{JSON.stringify(result ?? {})}</div>
       </header>
+        <Location city={result?.location.name ?? ''} country={result?.location.country ?? ''} />
+        <div>{JSON.stringify(result ?? {})}</div>
     </div>
   );
 }

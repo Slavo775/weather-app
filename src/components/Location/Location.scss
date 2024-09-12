@@ -1,0 +1,24 @@
+@import '../../style/variables';
+
+.location {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 20px;
+  &__main {
+    //font-family: Bricolage Grotesque 72pt;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 31.5px;
+    text-align: center;
+    margin: 0;
+  }
+  &__date-time {
+    //font-family: Bricolage Grotesque 72pt;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    text-align: center;
+    color: $light-text-color;
+  }
+}
