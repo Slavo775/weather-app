@@ -1,0 +1,26 @@
+.current-condition {
+  display: flex;
+  padding: 6px 36px;
+  justify-content: space-between;
+  height: 140px;
+  &__image {
+    width: 120px;
+    height: 130px;
+  }
+  &__text-info {
+    width: 106px;
+    &__temp {
+      font-size: 78px;
+      font-weight: 800;
+      line-height: 93.6px;
+      text-align: left;
+    }
+    &__current-state {
+      font-size: 20px;
+      font-weight: 800;
+      line-height: 24px;
+      text-align: left;
+
+    }
+  }
+}
