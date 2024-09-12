@@ -1,0 +1,12 @@
+@import "../../../style/variables";
+
+.header-input {
+  border: none;
+  box-shadow: none;
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+  outline: 2px solid $input-background-color;
+  width: 100%;
+  box-sizing: border-box;
+}
