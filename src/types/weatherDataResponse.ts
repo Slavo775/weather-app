@@ -6,6 +6,9 @@ export type ForecastWeatherDataResponse = {
 
 export type CurrentWeatherResponse = {
     temp_c: number,
+    precip_mm: number,
+    wind_kph: number,
+    humidity: number,
     condition: {
         text: string,
         icon: string
