@@ -21,6 +21,10 @@
       line-height: 24px;
       text-align: left;
 
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+
     }
   }
 }
