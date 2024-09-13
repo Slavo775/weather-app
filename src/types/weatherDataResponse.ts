@@ -15,17 +15,23 @@ export type CurrentWeatherResponse = {
     }
 
 }
+
 export type ForecastWeatherResponse = {
-    forecastDay: {
-       hour: {
-           temp_c: number,
-           time: string,
-           condition: {
-               icon: string
-           }
-       }[]
+    forecastday: {
+       hour: ForecastWeatherHourResponse[]
     }[]
 }
+
+export type ForecastWeatherHourResponse = {
+    temp_c: number,
+    time: string,
+    condition: {
+        icon: string,
+        text: string
+    }
+}
+
+
 export type LocationWeatherResponse = {
     country: string,
     name: string
