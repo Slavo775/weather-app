@@ -28,7 +28,7 @@ export function WeatherDetailWrapper({
       <WeatherDetailCard
         cardIcon={DropIcon()}
         cardText={'Vlhkosť vzduchu'}
-        cardData={`${humidity}km/h`}
+        cardData={`${humidity}%`}
       />
     </div>
   )
