@@ -8,9 +8,11 @@
   padding: 12px 6px;
   border-radius: 12px;
   background-color: $white-40-color;
-  width: 47px;
-  height: 93px;
+  //width: 47px;
+  //height: 93px;
+  min-width: 47px;
   box-sizing: border-box;
+  box-shadow: 0 6px 14px 0 $background-color;
   &--active {
     background-color: white;
   }

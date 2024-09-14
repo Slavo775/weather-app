@@ -1,1 +1,45 @@
-.hourly-forecast {}
+@import "../../style/variables";
+
+.hourly-forecast {
+  &__empty-slide {
+    width: 30px;
+    height: 93px;
+    display: flex;
+  }
+  &__dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    &__dot {
+      width: 6px;
+      height: 6px;
+      display: flex;
+      background-color: $black-20-color;
+      border: none;
+      padding: 0;
+      border-radius: 3px;
+      transition: width 0.3s linear, background-color 0.3s linear;
+    }
+  }
+}
+
+.carousel__inner-slide {
+  left: -22px;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+}
+
+.carousel__slide {
+  padding-bottom: 88px;
+}
+
+.carousel__slider {
+  height: 88px;
+}
+
+.carousel__dot--selected {
+  width: 20px;
+  background-color: black;
+}
