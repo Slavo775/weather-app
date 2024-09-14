@@ -4,7 +4,7 @@ import HeaderMenuIcon from '../../svg/HeaderMenuIcon'
 import './Header.scss'
 import { useState, lazy, Suspense } from 'react'
 
-const Header = ({ getWeatherData }: { getWeatherData: (location: string) => Promise<void> }) => {
+const Header = () => {
   const [isFormShown, setIsFormShown] = useState(false)
   const SearchForm = lazy(() => import('../SearchForm/SearchForm'))
   const onMagnifierButtonClick = () => {
@@ -14,7 +14,7 @@ const Header = ({ getWeatherData }: { getWeatherData: (location: string) => Prom
     <div className="header">
       {isFormShown ? (
         <Suspense>
-          <SearchForm getWeatherData={getWeatherData} setIsFormShown={setIsFormShown} />
+          <SearchForm setIsFormShown={setIsFormShown} />
         </Suspense>
       ) : (
         <div className={'header__header-main-content'}>

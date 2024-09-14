@@ -39,7 +39,7 @@ export default function HourlyForecast({ hours }: { hours: ForecastWeatherHourRe
             <div className={'hourly-forecast__slider__empty-slide'}></div>
           </Slide>
           {hoursLocal.map((hour, index) => (
-            <Slide index={index + 1} key={hour.time} style={{ 'padding-bottom': '88px' }}>
+            <Slide index={index + 1} key={hour.time} style={{ paddingBottom: '88px' }}>
               {HourlyForecastCard({
                 imgSrc: hour.condition.icon,
                 time: getTimeFromDateTime(hour.date),
