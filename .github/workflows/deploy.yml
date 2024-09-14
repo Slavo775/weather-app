@@ -9,7 +9,7 @@ on:
 env:
   applicationfolder: ''
   AWS_REGION: eu-west-2
-  S3BUCKET: the-name-of-my-bucket-on-aws
+  S3BUCKET: weather-app-sedlak
   CI: false
 
 
