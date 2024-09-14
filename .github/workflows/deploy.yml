@@ -39,10 +39,10 @@ jobs:
         run: chmod -R +x ./.github
 
       - name: Install Dependencies
-        run: npm install
+        run: pnpm install
 
       - name: Build and Package
-        run: npm run build
+        run: pnpm build
 
       - name: Upload Artifact to s3
         run: aws s3 cp $GITHUB_WORKSPACE/build s3://${{ env.S3BUCKET }} --recursive
