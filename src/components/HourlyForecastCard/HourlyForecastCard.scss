@@ -1,0 +1,35 @@
+@import '../../style/variables';
+
+.hourly-forecast-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3px;
+  padding: 12px 6px;
+  border-radius: 12px;
+  background-color: $white-40-color;
+  //width: 47px;
+  //height: 93px;
+  min-width: 47px;
+  box-sizing: border-box;
+  box-shadow: 0 6px 14px 0 $background-color;
+  &--active {
+    background-color: white;
+  }
+  &__time {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: $light-text-color
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+  }
+  &__temp {
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 14px;
+    color: black;
+  }
+}
