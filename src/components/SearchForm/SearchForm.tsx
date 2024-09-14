@@ -3,7 +3,7 @@ import { BaseSyntheticEvent, useState } from 'react'
 import { Button } from '../shared/Button/Button'
 import './SearchForm.scss'
 
-export function SearchForm({
+export default function SearchForm({
   getWeatherData
 }: {
   getWeatherData: (location: string) => Promise<void>

@@ -4,9 +4,19 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  &__magnifier-button {
-    border: none;
-    box-shadow: none;
-    background: none;
+  &__header-main-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    &__magnifier-button {
+      border: none;
+      box-shadow: none;
+      background: none;
+    }
   }
+}
+
+.search-form {
+  width: 80%;
 }
