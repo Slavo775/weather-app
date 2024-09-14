@@ -2,15 +2,14 @@ import Input from '../shared/Input/Input'
 import { type BaseSyntheticEvent, type Dispatch, type SetStateAction, useState } from 'react'
 import { Button } from '../shared/Button/Button'
 import './SearchForm.scss'
-
+import { useWeatherData } from '../../use/weatherData'
 export default function SearchForm({
-  getWeatherData,
   setIsFormShown
 }: {
-  getWeatherData: (location: string) => Promise<void>
   setIsFormShown: Dispatch<SetStateAction<boolean>>
 }) {
   const [inputValue, setInputValue] = useState('')
+  const { getWeatherData } = useWeatherData()
   const onSearchSubmit = async (event: BaseSyntheticEvent) => {
     event.preventDefault()
     await getWeatherData(inputValue)

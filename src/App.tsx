@@ -1,29 +1,31 @@
-import React, { lazy, Suspense } from 'react'
+import React, { lazy, Suspense, useMemo } from 'react'
 import './App.scss'
 import Header from './components/Header/Header'
-import { useWeatherData } from './use/weatherData'
 import './style/fonts.scss'
 import ContentMessage from './components/ContentMessage/ContentMessage'
+import { useWeatherData } from './use/weatherData'
 
 function App() {
-  const { getWeatherData, result, isFetching } = useWeatherData()
+  const { result, isFetching, emptyResult } = useWeatherData()
   const WeatherContent = lazy(() => import('./components/WeatherContent/WeatherContent'))
 
   return (
     <div className="App">
       <header className="App-header">
-        <Header getWeatherData={getWeatherData} />
+        <Header />
       </header>
       {result && !isFetching && (
         <Suspense>
           <WeatherContent result={result} />
         </Suspense>
       )}
-      {result === undefined && !isFetching && (
+      {emptyResult && !isFetching && (
         <ContentMessage message={'Pre zadany vyraz sa nenasli vysledky'} />
       )}
-      {result === null && !isFetching && <ContentMessage message={'Prosím zadaj lokalitu'} />}
-      {isFetching && <ContentMessage message={''} />}
+      {!result && !isFetching && !emptyResult && (
+        <ContentMessage message={'Prosím zadaj lokalitu'} />
+      )}
+      {isFetching && <ContentMessage message={'Načítavam...'} />}
     </div>
   )
 }
