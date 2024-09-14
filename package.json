@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "prettier": "^3.3.3",
     "sass": "^1.78.0"
   }
 }
