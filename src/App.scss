@@ -3,11 +3,7 @@
 .App {
   text-align: center;
   background-color: $background-color;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  min-height: 100vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -16,12 +12,8 @@
   }
 }
 
-.App-header {
-  background-color: $background-color;
-}
-
-.App-link {
-  color: #61dafb;
+.content-message {
+  margin: 100px 0;
 }
 
 @keyframes App-logo-spin {

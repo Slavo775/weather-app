@@ -14,7 +14,7 @@ const Header = ({ getWeatherData }: { getWeatherData: (location: string) => Prom
     <div className="header">
       {isFormShown ? (
         <Suspense>
-          <SearchForm getWeatherData={getWeatherData} />
+          <SearchForm getWeatherData={getWeatherData} setIsFormShown={setIsFormShown} />
         </Suspense>
       ) : (
         <div className={'header__header-main-content'}>
