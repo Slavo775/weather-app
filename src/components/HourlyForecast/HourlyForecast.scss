@@ -1,17 +1,19 @@
 @import "../../style/variables";
 
 .hourly-forecast {
-  &__empty-slide {
-    width: 30px;
-    height: 93px;
-    display: flex;
+  &__slider {
+    padding: 12px 0 15px 0;
+    &__empty-slide {
+      width: 30px;
+      height: 93px;
+      display: flex;
+    }
   }
   &__dots {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 6px;
-    margin-top: 12px;
     &__dot {
       width: 6px;
       height: 6px;

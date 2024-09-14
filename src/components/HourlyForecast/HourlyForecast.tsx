@@ -33,10 +33,10 @@ export default function HourlyForecast({ hours }: { hours: ForecastWeatherHourRe
         step={1}
         dragStep={1}
         currentSlide={activeHourIndex}>
-        <Slider style={{ gap: '14px' }}>
+        <Slider className={'hourly-forecast__slider'}>
           {/*empty slide for correct first render slide*/}
           <Slide index={0}>
-            <div className={'hourly-forecast__empty-slide'}></div>
+            <div className={'hourly-forecast__slider__empty-slide'}></div>
           </Slide>
           {hoursLocal.map((hour, index) => (
             <Slide index={index + 1} key={hour.time} style={{ 'padding-bottom': '88px' }}>
