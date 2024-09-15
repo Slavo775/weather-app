@@ -32,6 +32,15 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
+### Environment Variables
+
+For local development, create .env file, and define following variables
+
+| Name                                 | Type                           | Desc                                                           |
+|--------------------------------------|--------------------------------|----------------------------------------------------------------|
+| REACT_APP_WEATHER_API_BASE_URL                      | string                         |  Basae url of weather api e.g. http://api.weatherapi.com/v1/ |                     
+| REACT_APP_WAETHER_API_KEY                        | string                         | Your api key |
+
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
