@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# Weather app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Weather App was created using Create React App with TypeScript.
+
+The app uses the https://www.weatherapi.com/ to fetch weather forecasts.
+
+Users can enter a location in the search input and submit the form, triggering a request to the API. If the API returns a 400 error, the app displays an empty result screen. If the API returns valid data, the app renders a weather content screen with all the relevant information.
+
+State management is handled by Redux Toolkit, which stores three values: `isFetching`, `emptyResult`, and `weatherData`. These values are set in the SearchForm component and accessed in the App component.
+
+## Other external packages
+
+ - Axios
+ - Prettier
+ - Pure react carousel
+ - redux
+ - redux-toolkit
+
+## Deploy 
+
+App deploy to production (aws) is through Github action and its trigger on push to main branch.
 
 ## Available Scripts
 
@@ -38,9 +56,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
