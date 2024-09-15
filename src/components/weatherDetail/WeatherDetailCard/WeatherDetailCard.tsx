@@ -1,6 +1,5 @@
 import React, { ReactElement } from 'react'
 import './WeatherDetailCard.scss'
-
 export function WeatherDetailCard({
   cardIcon,
   cardText,

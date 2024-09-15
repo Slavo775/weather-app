@@ -5,6 +5,7 @@ import { WeatherDetailWrapper } from '../weatherDetail/WeatherDetailWrapper/Weat
 import React from 'react'
 import { ForecastWeatherDataResponse } from '../../types/weatherDataResponse'
 
+// Weather content connect all component related to weather data
 export default function WeatherContent({ result }: { result: ForecastWeatherDataResponse }) {
   return (
     <div>

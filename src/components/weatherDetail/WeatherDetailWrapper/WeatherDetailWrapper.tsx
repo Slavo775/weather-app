@@ -4,6 +4,7 @@ import WindIcon from '../../../svg/WindIcon'
 import DropIcon from '../../../svg/DropIcon'
 import './WeatherDetailWrapper.scss'
 
+// Component for showing last section of weather content
 export function WeatherDetailWrapper({
   precip,
   wind,
