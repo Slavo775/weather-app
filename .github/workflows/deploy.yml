@@ -41,7 +41,7 @@ jobs:
         run: npm install
 
       - name: Build and Package
-        run: npm run build
+        run: REACT_APP_WAETHER_API_KEY=${{secrets.REACT_APP_WAETHER_API_KEY}} REACT_APP_WEATHER_API_BASE_URL=${{secrets.REACT_APP_WEATHER_API_BASE_URL}} npm run build
 
       - name: Upload Artifact to s3
         run: aws s3 cp $GITHUB_WORKSPACE/build s3://${{ env.S3BUCKET }} --recursive
