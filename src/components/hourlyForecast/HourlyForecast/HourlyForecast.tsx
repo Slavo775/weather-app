@@ -1,6 +1,6 @@
-import { ForecastWeatherHourResponse } from '../../types/weatherDataResponse'
+import { ForecastWeatherHourResponse } from '../../../types/weatherDataResponse'
 import HourlyForecastCard from '../HourlyForecastCard/HourlyForecastCard'
-import { getNearestDate, getTimeFromDateTime } from '../../utils/dateTime'
+import { getNearestDate, getTimeFromDateTime } from '../../../utils/dateTime'
 import { useMemo } from 'react'
 import { CarouselProvider, Dot, Slide, Slider } from 'pure-react-carousel'
 import 'pure-react-carousel/dist/react-carousel.es.css'

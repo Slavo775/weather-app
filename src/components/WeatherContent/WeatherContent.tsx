@@ -1,6 +1,6 @@
 import Location from '../Location/Location'
 import { CurrentCondition } from '../CurrentCondition/CurrentCondition'
-import HourlyForecast from '../HourlyForecast/HourlyForecast'
+import HourlyForecast from '../hourlyForecast/HourlyForecast/HourlyForecast'
 import { WeatherDetailWrapper } from '../weatherDetail/WeatherDetailWrapper/WeatherDetailWrapper'
 import React from 'react'
 import { ForecastWeatherDataResponse } from '../../types/weatherDataResponse'
