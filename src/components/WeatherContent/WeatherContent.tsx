@@ -1,10 +1,11 @@
 import Location from '../Location/Location'
 import { CurrentCondition } from '../CurrentCondition/CurrentCondition'
-import HourlyForecast from '../HourlyForecast/HourlyForecast'
+import HourlyForecast from '../hourlyForecast/HourlyForecast/HourlyForecast'
 import { WeatherDetailWrapper } from '../weatherDetail/WeatherDetailWrapper/WeatherDetailWrapper'
 import React from 'react'
 import { ForecastWeatherDataResponse } from '../../types/weatherDataResponse'
 
+// Weather content connect all component related to weather data
 export default function WeatherContent({ result }: { result: ForecastWeatherDataResponse }) {
   return (
     <div>

@@ -6,8 +6,7 @@ import {
   setWeatherData as setWeatherDataAction,
   setIsFetching as setIsFetchingAction,
   setEmptyResult as setEmptyResultAction,
-  RootState,
-  emptyResultSlice
+  RootState
 } from '../store/weatherData'
 
 export const useWeatherData = () => {

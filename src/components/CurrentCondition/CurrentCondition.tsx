@@ -1,4 +1,6 @@
 import './CurrentCondition.scss'
+
+// Component display for display image of current weather and temp with description
 export function CurrentCondition({
   imgSource,
   temp,

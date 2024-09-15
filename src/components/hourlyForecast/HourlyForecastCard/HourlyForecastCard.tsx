@@ -8,6 +8,8 @@ type ComponentProps = {
   isActive: boolean
 }
 
+//Component for display data for one hour of day
+
 export default function HourlyForecastCard({
   imgSrc,
   time,

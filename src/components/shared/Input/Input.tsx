@@ -4,11 +4,13 @@ import './Input.scss'
 export default function Input({
   value,
   setValue,
-  placeholder
+  placeholder,
+  ariaLabel
 }: {
   value: string
   setValue: Dispatch<SetStateAction<string>>
   placeholder?: string
+  ariaLabel?: string
 }) {
   const onInputChange = (event: BaseSyntheticEvent) => {
     setValue(event.target?.value ?? '')
@@ -21,6 +23,7 @@ export default function Input({
       placeholder={placeholder}
       onChange={onInputChange}
       value={value}
+      aria-label={ariaLabel}
     />
   )
 }

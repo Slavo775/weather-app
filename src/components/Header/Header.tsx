@@ -4,6 +4,11 @@ import HeaderMenuIcon from '../../svg/HeaderMenuIcon'
 import './Header.scss'
 import { useState, lazy, Suspense } from 'react'
 
+/*  Header component have 2 state
+      - default to show Magnifier icon + logo + menu
+      - search to show Search form
+    these 2 states depend on value isFormShow
+*/
 const Header = () => {
   const [isFormShown, setIsFormShown] = useState(false)
   const SearchForm = lazy(() => import('../SearchForm/SearchForm'))
