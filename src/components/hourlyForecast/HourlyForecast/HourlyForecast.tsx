@@ -31,7 +31,6 @@ export default function HourlyForecast({ hours }: { hours: ForecastWeatherHourRe
         totalSlides={25}
         visibleSlides={5}
         step={1}
-        dragStep={1}
         currentSlide={activeHourIndex}>
         <Slider className={'hourly-forecast__slider'}>
           {/*empty slide for correct first render slide*/}
