@@ -7,7 +7,7 @@ on:
 
 env:
   applicationfolder: ''
-  AWS_REGION: eu-west-2
+  AWS_REGION: eu-north-1
   S3BUCKET: weather-app-sedlak
   CI: false
 
@@ -45,4 +45,3 @@ jobs:
 
       - name: Upload Artifact to s3
         run: aws s3 cp $GITHUB_WORKSPACE/build s3://${{ env.S3BUCKET }} --recursive
-        #Note: build is for create-react-app builds and dist for vite builds
